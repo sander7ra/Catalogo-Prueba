@@ -1,0 +1,10 @@
+[
+  {
+    "id": "producto-001",
+    "nombre": "Producto de ejemplo",
+    "precioCentavos": 10000,
+    "moneda": "MXN",
+    "imagen": "",
+    "activo": true
+  }
+]
