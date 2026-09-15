@@ -1,6 +1,6 @@
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CACHE = `catalogo-${self.registration.scope}-${VERSION}`;
-const PUBLICOS = ['./', './index.html', './css/style.css', './js/app.js', './js/pwa.js', './manifest.json', './assets/icons/icon-192.png', './assets/icons/icon-512.png', './assets/icons/apple-touch-icon.png'];
+const PUBLICOS = ['./', './index.html', './css/style.css', './js/app.js', './js/pwa.js', './js/modules/catalogo.js', './assets/images/hero.jpg', './assets/images/cake1.jpg', './assets/images/cake2.jpg', './assets/images/cake3.jpg', './assets/images/cake4.jpg', './assets/images/story1.jpg', './assets/images/story2.jpg', './assets/images/story3.jpg', './assets/images/story4.jpg', './manifest.json', './assets/icons/icon-192.png', './assets/icons/icon-512.png', './assets/icons/apple-touch-icon.png'];
 const urls = PUBLICOS.map(ruta => new URL(ruta, self.registration.scope).href);
 self.addEventListener('install', evento => {
   evento.waitUntil(caches.open(CACHE).then(cache => cache.addAll(urls)));

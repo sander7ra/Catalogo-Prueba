@@ -1,13 +1,13 @@
 {
   "id": "./",
-  "name": "Mi catálogo",
-  "short_name": "Catálogo",
+  "name": "Dulce — Mi catálogo",
+  "short_name": "Dulce",
   "lang": "es",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f4f8f5",
-  "theme_color": "#34785b",
+  "background_color": "#fffaf7",
+  "theme_color": "#a62c32",
   "prefer_related_applications": false,
   "icons": [
     {

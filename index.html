@@ -1,24 +1,7 @@
-<!doctype html>
-<html lang="es">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#34785b">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Mi catálogo">
-  <title>Mi catálogo</title>
-  <link rel="manifest" href="./manifest.json">
-  <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png">
-  <link rel="icon" href="./assets/icons/icon-192.png">
-  <link rel="stylesheet" href="./css/style.css">
-  <script type="module" src="./js/app.js"></script>
-</head>
-
-<body>
-  <main>
-    <h1>ola cara d cola uwu</h1>
-  </main>
-</body>
-
-</html>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#a62c32"><meta name="apple-mobile-web-app-capable" content="yes"><title>Dulce — Catálogo</title><link rel="manifest" href="./manifest.json"><link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png"><link rel="icon" href="./assets/icons/icon-192.png"><link rel="stylesheet" href="./css/style.css"><script type="module" src="./js/app.js"></script></head><body>
+<div class="shell"><header><a class="brand" href="./">dulce<span>·</span></a><form id="searchForm" role="search"><label class="sr" for="search">Buscar productos</label><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="¿Qué se te antoja?"><button aria-label="Buscar">Buscar</button></form><button class="cart-button" id="openCart">Carrito <span id="count">0</span></button></header>
+<nav aria-label="Categorías"><a href="#catalogo">Todos los productos</a><a href="#catalogo" data-nav="Clásicos">Clásicos</a><a href="#catalogo" data-nav="Especiales">Especiales</a><a href="#catalogo" data-nav="Postres">Postres</a><a href="#catalogo" data-nav="Galletas">Galletas</a><a href="#promesa">Nuestra promesa</a><a class="pill" href="#catalogo">Ver catálogo</a></nav>
+<section class="hero"><div class="hero-photo"><img src="./assets/images/hero.jpg" alt="Pastel de chocolate con frutos rojos"></div><div class="hero-copy"><p class="eyebrow">PARA LOS AMANTES DEL CHOCOLATE</p><h1>Un antojo.<br>Mil razones<br>para celebrar.</h1><p>Elige tu favorito y comparte algo dulce.</p><a class="light-button" href="#catalogo">Encuentra tu favorito <span>↗</span></a></div><div class="hero-side"><img src="./assets/images/cake3.jpg" alt="Pastel con almendras"><img src="./assets/images/cake4.jpg" alt="Pastel en capas"></div></section>
+<main><section id="catalogo"><div class="menu-row"><div><p class="eyebrow">HECHO PARA COMPARTIR</p><h2>El menú</h2><p>¿Cuál vas a elegir hoy?</p></div><div class="categories" aria-label="Filtrar productos"><button data-category="Todos" aria-pressed="true"><span aria-hidden="true">♡</span>Todos</button><button data-category="Clásicos" aria-pressed="false"><span aria-hidden="true">♧</span>Clásicos</button><button data-category="Especiales" aria-pressed="false"><span aria-hidden="true">✧</span>Especiales</button><button data-category="Postres" aria-pressed="false"><span aria-hidden="true">◇</span>Postres</button><button data-category="Galletas" aria-pressed="false"><span aria-hidden="true">▦</span>Galletas</button></div></div><div class="section-heading"><h3 id="resultsTitle">Nuestros favoritos</h3><span id="resultsCount"></span></div><div class="products" id="products"></div><p id="empty" hidden>No encontramos productos. Prueba otra búsqueda o categoría.</p><p class="sample-note">Catálogo de muestra · productos y precios de ejemplo.</p></section>
+<section class="promise" id="promesa"><p class="eyebrow">LOS PEQUEÑOS DETALLES IMPORTAN</p><h2>Nuestra promesa</h2><p>Un dulce detalle para tus mejores momentos.</p><div class="promise-layout"><div class="promise-left"><div class="values"><h3>Lo que hace especial cada pedido</h3><div><article><span>◷</span><b>Tu momento</b><p>Para cada ocasión</p></article><article><span>♧</span><b>Tu favorito</b><p>Sabores para elegir</p></article><article><span>♡</span><b>Para compartir</b><p>Pequeños detalles</p></article></div></div><div class="ticket"><span class="ticket-icon" aria-hidden="true">✧</span><div><p class="eyebrow">UN REGALO QUE SE DISFRUTA</p><h3>Algo dulce,<br>para alguien especial.</h3><p>Encuentra un detalle en nuestro menú.</p><a class="pill" href="#catalogo">Elegir un favorito</a></div></div><div class="little-note">Hecho para celebrar, regalar y compartir. ♡</div></div><div class="story-grid"><figure><img src="./assets/images/story1.jpg" alt="Cada celebración" loading="lazy"><figcaption>Cada celebración</figcaption></figure><figure><img src="./assets/images/story2.jpg" alt="Un detalle especial" loading="lazy"><figcaption>Un detalle especial</figcaption></figure><figure><img src="./assets/images/story3.jpg" alt="Momentos dulces" loading="lazy"><figcaption>Momentos dulces</figcaption></figure><figure><img src="./assets/images/story4.jpg" alt="Para compartir" loading="lazy"><figcaption>Para compartir</figcaption></figure></div></div></section><div class="closing">dulce · Un pequeño gusto para cada gran momento</div></main><footer><a class="brand" href="./">dulce<span>·</span></a><p>Elige, comparte y disfruta.</p><a href="#catalogo">Catálogo</a><a href="#promesa">Nuestra promesa</a><button id="install" hidden>Instalar aplicación</button></footer></div>
+<dialog id="cart"><div class="dialog-heading"><div><p class="eyebrow">TUS FAVORITOS</p><h2>Tu carrito</h2></div><button id="closeCart" aria-label="Cerrar carrito">✕</button></div><div id="cartItems"></div><div class="total"><span>Total</span><strong id="total">$0</strong></div><p class="pending">Esta es una prueba. El envío de pedidos y las notificaciones aún no están conectados.</p><button class="checkout" disabled>Envío de pedidos pendiente</button></dialog><div id="toast" role="status" aria-live="polite"></div></body></html>
